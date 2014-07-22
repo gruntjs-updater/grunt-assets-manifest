@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # grunt-assets-manifest
 
 > The best Grunt plugin ever.
@@ -87,3 +88,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 _(Nothing yet)_
+=======
+grunt-assets-manifest
+=====================
+>>>>>>> 2313e4073f38655770d117fa059e3204069a2400
