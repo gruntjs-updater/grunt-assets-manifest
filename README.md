@@ -1,0 +1,2 @@
+grunt-assets-manifest
+=====================
