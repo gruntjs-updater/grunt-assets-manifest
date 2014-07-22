@@ -1,0 +1,41 @@
+{
+  "name": "grunt-assets-manifest",
+  "description": "The best Grunt plugin ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stigmat4j/grunt-assets-manifest",
+  "author": {
+    "name": "Max Antonikhin",
+    "email": "mantonikhin@positrace.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stigmat4j/grunt-assets-manifest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stigmat4j/grunt-assets-manifest/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/stigmat4j/grunt-assets-manifest/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
