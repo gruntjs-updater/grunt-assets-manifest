@@ -1,7 +1,7 @@
 {
   "name": "grunt-assets-manifest",
   "description": "The best Grunt plugin ever.",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "homepage": "https://github.com/stigmat4j/grunt-assets-manifest",
   "author": {
     "name": "Max Antonikhin",

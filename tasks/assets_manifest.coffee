@@ -1,3 +1,6 @@
+crypto = require 'crypto'
+_ = require 'lodash'
 module.exports = (grunt) ->
-  grunt.registeMultiTask 'manifest', 'Generate assets manifest', ->
-    console.log 1111
+  grunt.registerMultiTask 'manifest', 'Generate assets manifest', ->
+    manifest = {}
+    console.log @
