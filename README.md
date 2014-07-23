@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # grunt-assets-manifest
 
 > The best Grunt plugin ever.
