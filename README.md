@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # grunt-assets-manifest
 
 > The best Grunt plugin ever.
@@ -91,3 +92,9 @@ _(Nothing yet)_
 grunt-assets-manifest
 =====================
 >>>>>>> 2313e4073f38655770d117fa059e3204069a2400
+=======
+grunt-assets-manifest
+=====================
+
+Grunt plugin for create assets file with md5 hash
+>>>>>>> 25d0b19699b2297e4f0de37aa6cd505d7ba59051
