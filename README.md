@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # grunt-assets-manifest
 
 > The best Grunt plugin ever.
@@ -25,14 +24,18 @@ In your project's Gruntfile, add a section named `assets_manifest` to the data o
 
 ```js
 grunt.initConfig({
-  assets_manifest: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+  manifest:
+    assets:
+      files: [
+        "appBuild/app.js"
+				"appBuild/modules/auth/auth.js"
+				"appBuild/modules/map/map.js"
+				"appBuild/modules/equipment/equipment.js"
+				"appBuild/modules/history/history.js"
+		  ]
+			dest: "build"
+			done: (file, content) ->
+        grunt.file.write "build/locate.json", JSON.stringify content
 });
 ```
 
@@ -88,13 +91,3 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 _(Nothing yet)_
-=======
-grunt-assets-manifest
-=====================
->>>>>>> 2313e4073f38655770d117fa059e3204069a2400
-=======
-grunt-assets-manifest
-=====================
-
-Grunt plugin for create assets file with md5 hash
->>>>>>> 25d0b19699b2297e4f0de37aa6cd505d7ba59051
