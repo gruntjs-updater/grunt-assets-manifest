@@ -20,5 +20,4 @@ module.exports = (grunt) ->
 
       manifest[_name] = nameWithHash
 
-    # grunt.file.write "#{dest}/assets.json", JSON.stringify manifest
     @data.done(JSON.stringify manifest)
