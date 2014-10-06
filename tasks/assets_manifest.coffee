@@ -9,14 +9,16 @@ module.exports = (grunt) ->
     files = @data.files
     dest = @data.dest
     _(files).each (file) ->
+      _file = file.file
+      _name = file.dest
+
       algorithmHash = crypto.createHash "MD5"
-      hash = algorithmHash.update(grunt.file.read(file)).digest("hex")
-      name = "#{path.basename file, ".js"}"
-      destWithHash = "#{dest}/#{path.basename file, ".js"}-#{hash}.js"
-      nameWithHash =  "#{path.basename file, ".js"}-#{hash}"
-      grunt.file.write destWithHash, grunt.file.read file
+      hash = algorithmHash.update(grunt.file.read(_file)).digest("hex")
+      destWithHash = "#{dest}/#{path.basename _file, ".js"}-#{hash}.js"
+      nameWithHash =  "#{path.basename _file, ".js"}-#{hash}"
+      grunt.file.write destWithHash, grunt.file.read _file
 
-      manifest[name] = nameWithHash
+      manifest[_name] = nameWithHash
 
-    grunt.file.write "#{dest}/assets.json", JSON.stringify manifest
-    @data.done("#{dest}/assets.json", JSON.stringify manifest)
+    # grunt.file.write "#{dest}/assets.json", JSON.stringify manifest
+    @data.done(JSON.stringify manifest)
