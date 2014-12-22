@@ -28,13 +28,13 @@ grunt.initConfig({
     assets:
       files: [
         "appBuild/app.js"
-				"appBuild/modules/auth/auth.js"
-				"appBuild/modules/map/map.js"
-				"appBuild/modules/equipment/equipment.js"
-				"appBuild/modules/history/history.js"
-		  ]
-			dest: "build"
-			done: (file, content) ->
+	"appBuild/modules/auth/auth.js"
+	"appBuild/modules/map/map.js"
+	"appBuild/modules/equipment/equipment.js"
+	"appBuild/modules/history/history.js"
+	]
+	dest: "build"
+	done: (file, content) ->
         grunt.file.write "build/locate.json", JSON.stringify content
 });
 ```
