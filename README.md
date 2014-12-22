@@ -27,7 +27,7 @@ grunt.initConfig({
   manifest:
     assets:
       files: [
-        "appBuild/app.js"
+	"appBuild/app.js"
 	"appBuild/modules/auth/auth.js"
 	"appBuild/modules/map/map.js"
 	"appBuild/modules/equipment/equipment.js"
