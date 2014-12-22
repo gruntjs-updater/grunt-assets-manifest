@@ -24,18 +24,18 @@ In your project's Gruntfile, add a section named `assets_manifest` to the data o
 
 ```js
 grunt.initConfig({
-  manifest:
-    assets:
-      files: [
-	"appBuild/app.js"
-	"appBuild/modules/auth/auth.js"
-	"appBuild/modules/map/map.js"
-	"appBuild/modules/equipment/equipment.js"
-	"appBuild/modules/history/history.js"
-	]
-	dest: "build"
-	done: (file, content) ->
-        grunt.file.write "build/locate.json", JSON.stringify content
+	manifest:
+		assets:
+			files: [
+				"appBuild/app.js"
+				"appBuild/modules/auth/auth.js"
+				"appBuild/modules/map/map.js"
+				"appBuild/modules/equipment/equipment.js"
+				"appBuild/modules/history/history.js"
+		]
+		dest: "build"
+		done: (file, content) ->
+    	grunt.file.write "build/locate.json", JSON.stringify content
 });
 ```
 
